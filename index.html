@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Krzysztofa - Montaż Filmowy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <img src="logo.png" alt="Reelify Logo">
+                <span class="logo-text">Reelify</span>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Strona główna</a></li>
+                <li><a href="#o-mnie">O mnie</a></li>
+                <li><a href="#filmy">Portfolio</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-text">
+            <h1>Witaj! Jestem Krzysztof, <span>Montażysta Filmowy</span></h1>
+            <p>Mam 20 lat i pasję do tworzenia filmów, które poruszają i inspirują. Zapraszam do zapoznania się z moim portfolio.</p>
+            <button id="showFormBtn" class="btn">Napisz do mnie</button>
+        </div>
+    </section>
+
+    <section id="o-mnie" class="o-mnie">
+        <div class="container">
+            <h2>O mnie</h2>
+            <p>Jestem młodym pasjonatem montażu filmowego . Moja praca skupia się na tworzeniu wciągających i profesjonalnych produkcji, które przyciągają uwagę i budują emocje.</p>
+            <p>Zapraszam do współpracy! Razem możemy stworzyć coś wyjątkowego.</p>
+        </div>
+    </section>
+
+    <section id="filmy" class="filmy">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="film-cards">
+                <div class="film-box">
+                    <iframe src="https://www.youtube.com/embed/BFK1FpL6inU" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="film-box">
+                    <iframe src="https://www.youtube.com/embed/vPpVww9d7iE" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="film-box">
+                    <iframe src="https://www.youtube.com/embed/waeK1WZH_A8" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontakt" class="kontakt">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Chcesz porozmawiać o współpracy? Napisz do mnie lub zadzwoń!</p>
+            <p>Email: k274.kowalski@gmail.com<br>Telefon: +48 731 052 467</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Reelify. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Formularz, który się pojawia po kliknięciu "Napisz do mnie" -->
+    <div id="contactFormContainer" class="hidden">
+        <div id="contactForm" class="container">
+            <h2>Napisz do mnie</h2>
+            <form id="contactForm" method="post" action="sendmail.php">
+                <input type="text" id="name" name="name" placeholder="Imię i nazwisko" required>
+                <input type="email" id="email" name="email" placeholder="Twój email" required>
+                <textarea id="message" name="message" placeholder="Twoja wiadomość" rows="4" required></textarea>
+                <button type="submit" class="btn">Wyślij</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
