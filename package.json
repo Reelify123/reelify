@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "build": "react-scripts build",  // lub odpowiedni skrypt dla Twojego projektu
+    // inne skrypty...
+  }
+}
